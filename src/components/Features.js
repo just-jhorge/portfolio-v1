@@ -2,7 +2,7 @@ import React from "react";
 
 const Features = () => {
     return (
-        <div id="about">
+        <section id="about">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
             vitae, quo tenetur eum ex velit id totam in pariatur illo odit
             maxime, dolore delectus harum sequi omnis. Labore, qui dicta!
@@ -21,7 +21,7 @@ const Features = () => {
             labore ducimus corporis repellat, provident quos perferendis iusto
             adipisci repellendus qui sapiente delectus voluptate beatae
             perspiciatis aperiam quia, rem ipsam?
-        </div>
+        </section>
     );
 };
 
