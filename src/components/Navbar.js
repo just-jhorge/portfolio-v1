@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
+import {
+    RiMenu3Fill,
+    RiCloseFill,
+    RiFacebookFill,
+    RiGithubFill,
+    RiTwitterFill,
+} from "react-icons/ri";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +45,7 @@ const Navbar = () => {
                     transition={{ delay: 2 }}
                     className={`${
                         isOpen ? "fixed" : "hidden"
-                    } bg-white h-full w-full  z-50 shadow-lg grid grid-cols-2`}
+                    } bg-white h-full w-full z-50 shadow-lg grid grid-cols-2`}
                 >
                     <div className="text-white grid grid-rows-2">
                         <div className="bg-green-200">
@@ -50,8 +56,8 @@ const Navbar = () => {
                             />
                         </div>
                         <div className="bg-blue-500 p-20 flex items-end justify-between leading-loose font-Josefin">
-                            <div>
-                                <h3 className="capitalize  font-bold text-4xl">
+                            <div className="flex flex-col space-y-5">
+                                <h3 className="capitalize font-bold text-4xl">
                                     stay in touch.
                                 </h3>
                                 <a href="mailto:sarpongk247@gmail.com">
@@ -60,20 +66,30 @@ const Navbar = () => {
                                 <p>+233 241 385 150</p>
                                 <p>Kumasi, Ghana</p>
                             </div>
-                            <div>Second content</div>
+                            <div className="flex flex-col space-y-5">
+                                <h1 className="text-5xl font-bold">GAS.</h1>
+                                <p>Let's get creative</p>
+                                <div className="flex items-center justify-start space-x-5 text-2xl text-white">
+                                    <RiFacebookFill />
+                                    <RiGithubFill />
+                                    <RiTwitterFill />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="relative text-ash flex flex-col items-start justify-center px-40 py-5">
-                        {homeLinks.map((link) => (
-                            <Link
-                                to={`${link.to}`}
-                                className="text-4xl font-Josefin font-bold my-10 capitalize"
-                                key={link.name}
-                                onClick={() => setIsOpen(false)}
-                            >
-                                {link.name}.
-                            </Link>
-                        ))}
+                    <div className="relative flex items-center justify-center text-ash px-40 py-5">
+                        <nav className="flex flex-col items-start justify-center">
+                            {homeLinks.map((link) => (
+                                <Link
+                                    to={`${link.to}`}
+                                    className="text-4xl font-Josefin font-bold my-10 capitalize hover:text-blue-400 transition-colors"
+                                    key={link.name}
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    {link.name}.
+                                </Link>
+                            ))}
+                        </nav>
                         <div
                             className="absolute right-10 top-5 text-4xl cursor-pointer"
                             onClick={() => setIsOpen(false)}
