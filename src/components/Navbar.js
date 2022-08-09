@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div
                         className={`${
                             isOpen ? "hidden" : ""
-                        } text-4xl cursor-pointer`}
+                        } text-4xl cursor-pointer text-ash`}
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         <RiMenu3Fill />
@@ -42,12 +42,15 @@ const Navbar = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ delay: 2 }}
+                    transition={{ duration: 2 }}
                     className={`${
                         isOpen ? "fixed" : "hidden"
-                    } bg-white h-full w-full z-50 shadow-lg grid grid-cols-2`}
+                    } bg-white h-full w-full z-50 shadow-lg flex flex-col-reverse justify-center items-center md:grid md:grid-cols-2`}
                 >
-                    <div className="text-white grid grid-rows-2">
+                    <div
+                        className="text-white
+                     md:grid md:grid-rows-2"
+                    >
                         <div className="bg-green-200">
                             <img
                                 src={require("../assets/pattern.png")}
@@ -55,7 +58,7 @@ const Navbar = () => {
                                 className="h-full w-full"
                             />
                         </div>
-                        <div className="bg-blue-500 p-20 flex items-end justify-between leading-loose font-Josefin">
+                        <div className="hidden bg-blue-500 p-20 md:flex items-end justify-between leading-loose font-Josefin">
                             <div className="flex flex-col space-y-5">
                                 <h3 className="capitalize font-bold text-4xl">
                                     stay in touch.
