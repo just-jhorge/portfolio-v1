@@ -18,18 +18,18 @@ const Intro = () => {
                     web developer
                 </p>
             </div>
-            <div className="absolute z-20 right-[30%] md:right-10 bottom-5 md:bottom-[35%] flex md:flex-col items-center justify-between md:space-y-20 md:space-x-0 space-x-10 space-y-0">
-                <Link to="/" className="text-3xl text-ash">
+            <div className="absolute z-20 right-5 md:right-10 bottom-5 flex flex-col items-center justify-between space-y-10 md:space-y-20">
+                <Link to="/" className="text-2xl md:text-3xl text-ash">
                     <RiFacebookFill />
                 </Link>
-                <Link to="/" className="text-3xl text-ash">
+                <Link to="/" className="text-2xl md:text-3xl text-ash">
                     <RiGithubFill />
                 </Link>
-                <Link to="/" className="text-3xl text-ash">
+                <Link to="/" className="text-2xl md:text-3xl text-ash">
                     <RiTwitterFill />
                 </Link>
             </div>
-            <div className="hidden md:block absolute z-20 bottom-10 animate-bounce">
+            <div className="block absolute z-20 bottom-5 md:bottom-10 animate-bounce">
                 <span className="text-5xl text-ash">&#8595;</span>
             </div>
         </header>
