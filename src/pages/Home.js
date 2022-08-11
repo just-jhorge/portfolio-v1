@@ -1,11 +1,11 @@
-import Features from "../components/Features";
 import Intro from "../components/Intro";
+import About from "../components/About";
 
 const Home = () => {
     return (
         <div>
             <Intro />
-            <Features />
+            <About />
         </div>
     );
 };

@@ -13,8 +13,8 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const homeLinks = [
         { name: "home", to: "/" },
-        { name: "about", to: "#about" },
-        { name: "projects", to: "#projects" },
+        { name: "about", to: "/about" },
+        { name: "projects", to: "/works" },
         { name: "skills", to: "#skills" },
         { name: "contact", to: "#contact" },
     ];

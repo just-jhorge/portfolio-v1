@@ -8,6 +8,7 @@ module.exports = {
                 Monoton: ["Monoton", "cursive"],
                 Play: ["Playfair Display", "serif"],
                 Montserrat: ["Montserrat", "sans-serif"],
+                figtree: ["Figtree", "sans-serif"],
             },
             fontSize: {
                 medium: ["12rem", "1rem"],
