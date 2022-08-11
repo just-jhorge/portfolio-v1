@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Intro = () => {
     return (
-        <header className="w-full h-[90vh] md:h-[100vh] overflow-hidden bg-[crimson] relative flex items-center justify-center px-10 py-5">
+        <header className="w-full h-screen overflow-hidden bg-[crimson] relative flex items-center justify-center px-10 py-5">
             <Navbar />
             <p className="absolute text-[#990000] text-big rotate-90 md:rotate-0 md:text-huge capitalize italic font-Monoton opacity-10 z-10">
                 hello
