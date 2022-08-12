@@ -3,12 +3,8 @@ import { Link } from "react-router-dom";
 
 const About = () => {
     return (
-        <div className="flex flex-col-reverse md:flex-row justify-center items-center w-full">
+        <div className="flex flex-col-reverse md:flex-row justify-center items-center w-full bg-slate-50">
             <div className="w-full md:max-w-[30%] h-full">
-                <source
-                    media="(min-width: 768px)"
-                    srcSet={require("../assets/pattern-2-small.png")}
-                />
                 <img
                     src={require("../assets/pattern-2.webp")}
                     alt="Pattern"
@@ -17,7 +13,7 @@ const About = () => {
             </div>
             <div className="w-full flex items-center justify-center text-ash">
                 <div className="max-w-[30rem] px-12 py-16 md:px-0 md:py-0">
-                    <h4 className="font-bold font-Josefin text-xl capitalize mb-5">
+                    <h4 className="font-light italic font-Josefin text-xl capitalize mb-5">
                         i'm an open book
                     </h4>
                     <h1 className="text-5xl md:text-7xl capitalize font-black mb-10">

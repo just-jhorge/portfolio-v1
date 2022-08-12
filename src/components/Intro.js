@@ -19,15 +19,30 @@ const Intro = () => {
                 </p>
             </div>
             <div className="absolute z-20 right-5 md:right-10 bottom-5 flex flex-col items-center justify-between space-y-10 md:space-y-20">
-                <Link to="/" className="text-2xl md:text-3xl text-ash">
+                <a
+                    href="https://www.facebook.com/george.afrifa.56"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-2xl md:text-3xl text-ash"
+                >
                     <RiFacebookFill />
-                </Link>
-                <Link to="/" className="text-2xl md:text-3xl text-ash">
+                </a>
+                <a
+                    href="https://github.com/just-jhorge"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-2xl md:text-3xl text-ash"
+                >
                     <RiGithubFill />
-                </Link>
-                <Link to="/" className="text-2xl md:text-3xl text-ash">
+                </a>
+                <a
+                    href="https://twitter.com/just_jhorge"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-2xl md:text-3xl text-ash"
+                >
                     <RiTwitterFill />
-                </Link>
+                </a>
             </div>
             <div className="block absolute z-20 bottom-5 md:bottom-10 animate-bounce">
                 <span className="text-5xl text-ash">&#8595;</span>
