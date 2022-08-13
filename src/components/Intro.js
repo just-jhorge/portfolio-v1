@@ -1,6 +1,5 @@
 import Navbar from "./Navbar";
 import { RiFacebookFill, RiGithubFill, RiTwitterFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
 
 const Intro = () => {
     return (
