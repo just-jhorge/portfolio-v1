@@ -30,7 +30,7 @@ const Works = () => {
                 className="lg:relative bg-red-500 lg:w-[50%] flex items-center justify-center p-10 md:p-5"
             >
                 <img
-                    src={require("../assets/golds-gym-small.png")}
+                    src={require("../assets/gym-small.png")}
                     alt=""
                     className="lg:absolute md:-left-32 lg:-left-48 z-30 drop-shadow-2xl"
                 />
